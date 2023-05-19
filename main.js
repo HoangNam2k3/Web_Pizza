@@ -185,16 +185,34 @@ function setBackgroundOnClick(cl, clor) {
 // setBackgroundOnClick('tablinks', '#fec524');
 
 // 
-var acc = document.getElementsByClassName("faq-tit");
+// var acc = document.getElementsByClassName("faq-tit");
 
-for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+// for (var i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
+
+
+function DongMo(cl, clActive){
+    var acc = document.getElementsByClassName(cl);
+    for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle(clActive);
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
     }
-  });
 }
+DongMo("sidebar-heading", "coll-active");
+DongMo("faq-tit", "active");

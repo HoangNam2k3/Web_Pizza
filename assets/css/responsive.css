@@ -101,6 +101,16 @@
         flex: 50%;
         max-width: 50%;
     }
+    /* Collect */
+    .collection-template .container{
+        padding: 12px;
+    }
+    .sticky-Sidebar{
+        width: 30%;
+    }
+    .colection-grid{
+        width: 70%;
+    }
 }
 
 
@@ -160,6 +170,14 @@
     }
     /*  */
     .home-support-item{
+        width: 100%;
+    }
+    /* Collection */
+    .sticky-Sidebar{
+        display: none;
+    }
+    .colection-grid{
+        padding: 12px;
         width: 100%;
     }
 }

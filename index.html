@@ -63,16 +63,16 @@
                     <!-- Begin: MENU Dropdown -->
                     <ul class="dropdown-submenu">
                         <li class="megamenu">
-                            <a href="#">Pizza</a>
+                            <a href="#collection-template" onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');">Pizza</a>
                         </li>
                         <li class="megamenu">
-                            <a href="#">Breads</a>
+                            <a href="#collection-template" onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');">Breads</a>
                         </li>
                         <li class="megamenu">
-                            <a href="#">Cakes</a>
+                            <a href="#collection-template" onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');">Cakes</a>
                         </li>
                         <li class="megamenu">
-                            <a href="#">Drinks</a>
+                            <a href="#collection-template" onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');">Drinks</a>
                         </li>
                     </ul>
                     <!-- End: MENU Dropdown -->
@@ -82,6 +82,7 @@
                         Collection
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
+                    
                     <!-- Begin: COLLECTION Dropdown -->
                     <ul class="dropdown-submenu">
                         <li class="megamenu">
@@ -506,13 +507,348 @@
         </div>
         <!-- END: Shipping deatail-->
         <!-- BEGIN: Collection-->
-        <div id="collection-template" class="collection-template">
-
+        <div id="collection-template" class="collection-template shopify-desc">
+            <div class="header-content">
+                <h4>COLLECTIONS</h4>
+                <p>
+                    <a href="#">Home</a>
+                    <span>Featured Product</span>
+                </p>
+            </div>
+            <div class="container flex">
+                <div class="sticky-Sidebar">
+                    <div class="menu-sticky categories" >
+                        <h4 class="sidebar-title">Categories</h4>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-item">
+                                <h4 class="sidebar-heading">Sort Drinks</h4>
+                                <ul class="sidebar-item-desc">
+                                    <li >
+                                        <a href="">Soda</a>
+                                    </li>
+                                    <li >
+                                        <a href="">Milk Shake</a>
+                                    </li>
+                                    <li >
+                                        <a href="">Tea</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item">
+                                <h4 class="sidebar-heading">Pizza</h4>
+                                <ul class="sidebar-item-desc">
+                                    <li >
+                                        <a href="">Margherita</a>
+                                    </li>
+                                    <li >
+                                        <a href="">Cheese Pizza</a>
+                                    </li>
+                                    <li >
+                                        <a href="">Chicken Cheese</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item">
+                                <h4 class="sidebar-heading">Burger</h4>
+                                <ul class="sidebar-item-desc">
+                                    <li >
+                                        <a href="">Chicken Double</a>
+                                    </li>
+                                    <li >
+                                        <a href="">Extra Long Burger</a>
+                                    </li>
+                                    <li >
+                                        <a href="">Veggi Manchow</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item">
+                                <h4>Sandwich</h4>
+                            </li>
+                            <li class="sidebar-item">
+                                <h4>Hot Drinks</h4>
+                            </li>
+                            <li class="sidebar-item">
+                                <h4>Cocktail</h4>
+                            </li>
+                            <li class="sidebar-item">
+                                <h4 class="sidebar-heading">Snacks</h4>
+                                <ul class="sidebar-item-desc">
+                                    <li >
+                                        <a href="">Cheese Roll</a>
+                                    </li>
+                                    <li >
+                                        <a href="">Spicy Rolls</a>
+                                    </li>
+                                    <li >
+                                        <a href="">Paneer Pasta</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-sticky dish">
+                        <h5 class="sidebar-title">Dish</h5>
+                        <ul class="sidebar-item">
+                            <li>
+                                <input type="checkbox" name="" id="Non-Veg">
+                                <label for="Non-Veg">Non-Veg</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="Veg">
+                                <label for="Veg">Veg</label>
+                            </li>
+                        </ul>
+                        <button type="submit">Clear</button>
+                        <button type="submit">Apply</button>
+                    </div>
+        
+                    <div class="menu-sticky size-coll">
+                        <h4 class="sidebar-title">Size</h4>
+                        <ul class="sidebar-item">
+                            <li>
+                                <input type="checkbox" name="" id="S">
+                                <label for="S">S</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="M">
+                                <label for="M">M</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="L">
+                                <label for="L">L</label>
+                            </li>
+                        </ul>
+                        <button type="submit">Clear</button>
+                        <button type="submit">Apply</button>
+                    </div>
+                    <div class="menu-sticky menu-price">
+                        <h4 class="sidebar-title">Price</h4>
+                        <p style=" margin-bottom: 24px;">The highest price is <span style="color: red;">$823.00</span></p>
+                        <div class="field">
+                            <label for="">From $</label>
+                            <input type="number" name="" id="" placeholder="0" min="0" max="899.000">
+                        </div>
+                        <div class="field">
+                            <label for="">To $</label>
+                            <input type="number" name="" id="" placeholder="899.000" min="0" max="899.000">
+                        </div>
+                        <button type="submit">Clear</button>
+                        <button type="submit">Apply</button>
+                    </div>
+                </div>
+                <div class="colection-grid">
+                    <div class="collection-header flex">
+                        <div class="sortby" >
+                            <label for="SortBy">Sort By</label>
+                            <select name="SortBy" id="SortBy" class="select-hidden-accessible" aria-hidden="true">
+                                <option value="manual">Featured</option>
+                                <option value="best-selling">Best selling</option>
+                                <option value="title-ascending">Alphabetically, A-Z</option>
+                                <option value="title-descending">Alphabetically, Z-A</option>
+                                <option value="price-ascending" selected="" data-select2-id="select2-data-8-wbmz">Price, low to high</option>
+                                <option value="price-descending">Price, high to low</option>
+                                <option value="created-ascending">Date, old to new</option>
+                                <option value="created-descending">Date, new to old</option>
+                              </select>
+                        </div>
+                        <div class="collection-items-per-page">
+                            <label for="paginateBy">Paginate by</label>
+                            <select name="paginateBy" id="paginateBy" class="select-hidden-accessible" aria-hidden="true">
+                              <option value="9">9</option>
+                              <option value="12">12</option>
+                              <option value="16">16</option>
+                              <option value="20">20</option>
+                              <option value="24">24</option>
+                              <option value="30">30</option>
+                              <option value="48">48</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="collection-container">
+                        <div class="taps-content">
+                            <ul class="swiper-wrapper flex">
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/ck1.webp" alt=""></a>
+                                        <p>Veg Exotica</p>
+                                        <p class="money">$559.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/ck2.webp" alt=""></a>
+                                        <p>Spicy Veggie Cheese</p>
+                                        <p class="money">$459.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/ck3.webp" alt=""></a>
+                                        <p>Spinach Cheese Pizza</p>
+                                        <p class="money">$559.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/mu1.webp" alt=""></a>
+                                        <p>Paneer Cupicum Supreme</p>
+                                        <p class="money">$559.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/mu2.webp" alt=""></a>
+                                        <p>Spicy Veggie Cheese</p>
+                                        <p class="money">$559.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/mu3.webp" alt=""></a>
+                                        <p>Soya Cheese Masala</p>
+                                        <p class="money">$559.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/ba1.webp" alt=""></a>
+                                        <p>Veggie Feast Pizza</p>
+                                        <p class="money">$259.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/ba2.webp" alt=""></a>
+                                        <p>Spicy Cheese Chicken</p>
+                                        <p class="money">$259.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li class="item">
+                                    <div class="product-container">
+                                        <a href=""><img src="./assets/imgs/ba3.webp" alt=""></a>
+                                        <p>Paneer Soya Supreme</p>
+                                        <p class="money">$299.00</p>
+                                        <div class="imagetWrapper">
+                                        <div class="product-btn">
+                                            <a href="">
+                                                <i class="fa-solid fa-link"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- END: Collection-->
         <!-- BEGIN: Product-->
         <div id="product-template" class="product-template">
-
+            
         </div>
         <!-- END: Product-->
 
@@ -743,7 +1079,7 @@
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/ck2.webp" alt=""></a>
-                                            <p>Veg Exotica</p>
+                                            <p>Spicy Veggie Cheese</p>
                                             <p class="money">$459.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
@@ -762,7 +1098,7 @@
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/ck3.webp" alt=""></a>
-                                            <p>Veg Exotica</p>
+                                            <p>Spinach Cheese Pizza</p>
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
@@ -785,7 +1121,7 @@
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/mu1.webp" alt=""></a>
-                                            <p>Veg Exotica</p>
+                                            <p>Paneer Cupicum Supreme</p>
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
@@ -804,7 +1140,7 @@
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/mu2.webp" alt=""></a>
-                                            <p>Veg Exotica</p>
+                                            <p>Soya Cheese Masala</p>
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
@@ -823,7 +1159,7 @@
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/mu3.webp" alt=""></a>
-                                            <p>Veg Exotica</p>
+                                            <p>Veggie Freast Pizza</p>
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
@@ -846,7 +1182,7 @@
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/ba1.webp" alt=""></a>
-                                            <p>Veg Exotica</p>
+                                            <p>Spicy Crispy Chicken</p>
                                             <p class="money">$259.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
@@ -865,7 +1201,7 @@
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/ba2.webp" alt=""></a>
-                                            <p>Veg Exotica</p>
+                                            <p>Spicy Cheese Chicken</p>
                                             <p class="money">$259.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
@@ -884,7 +1220,7 @@
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/ba3.webp" alt=""></a>
-                                            <p>Veg Exotica</p>
+                                            <p>Spiced Chicken Meatballs</p>
                                             <p class="money">$299.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
