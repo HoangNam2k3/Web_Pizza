@@ -86,16 +86,16 @@
                     <!-- Begin: COLLECTION Dropdown -->
                     <ul class="dropdown-submenu">
                         <li class="megamenu">
-                            <a href="#">Nhà Hut</a>
+                            <a href="#product-template" onclick="javascript:closeFormClass('shopify-section'); showForm('product-template', 'shopify-desc');">Home Hut</a>
                         </li>
                         <li class="megamenu">
-                            <a href="#">Kids box</a>
+                            <a href="#product-template" onclick="javascript:closeFormClass('shopify-section'); showForm('product-template', 'shopify-desc');">Kids box</a>
                         </li>
                         <li class="megamenu">
-                            <a href="#">My box</a>
+                            <a href="#product-template" onclick="javascript:closeFormClass('shopify-section'); showForm('product-template', 'shopify-desc');">My box</a>
                         </li>
                         <li class="megamenu">
-                            <a href="#">Limo & Combo</a>
+                            <a href="#product-template" onclick="javascript:closeFormClass('shopify-section'); showForm('product-template', 'shopify-desc');">Limo & Combo</a>
                         </li>
                     </ul>
                     <!-- End: COLLECTION Dropdown -->
@@ -358,7 +358,7 @@
                     <h3><span>Join Us:</span> Let's Make Launch Great</h3>
                     <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
                     <div class="mutiple-btns">
-                        <button>Shop Now</button>
+                        <button onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');">Shop Now</button>
                     </div>
                 </div>
             </div>
@@ -563,13 +563,13 @@
                                 </ul>
                             </li>
                             <li class="sidebar-item">
-                                <h4>Sandwich</h4>
+                                <a href="#">Sandwich</a>
                             </li>
                             <li class="sidebar-item">
-                                <h4>Hot Drinks</h4>
+                                <a href="#">Hot Drinks</a>
                             </li>
                             <li class="sidebar-item">
-                                <h4>Cocktail</h4>
+                                <a href="#">Cocktail</a>
                             </li>
                             <li class="sidebar-item">
                                 <h4 class="sidebar-heading">Snacks</h4>
@@ -591,11 +591,11 @@
                         <h5 class="sidebar-title">Dish</h5>
                         <ul class="sidebar-item">
                             <li>
-                                <input type="checkbox" name="" id="Non-Veg">
+                                <input type="radio" name="" id="Non-Veg">
                                 <label for="Non-Veg">Non-Veg</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="" id="Veg">
+                                <input type="radio" name="" id="Veg">
                                 <label for="Veg">Veg</label>
                             </li>
                         </ul>
@@ -607,15 +607,15 @@
                         <h4 class="sidebar-title">Size</h4>
                         <ul class="sidebar-item">
                             <li>
-                                <input type="checkbox" name="" id="S">
+                                <input type="radio" name="" id="S">
                                 <label for="S">S</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="" id="M">
+                                <input type="radio" name="" id="M">
                                 <label for="M">M</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="" id="L">
+                                <input type="radio" name="" id="L">
                                 <label for="L">L</label>
                             </li>
                         </ul>
@@ -666,7 +666,8 @@
                         </div>
                     </div>
                     <div class="collection-container">
-                        <div class="taps-content">
+                        <!--  -->
+                        <div class="tabs-content-coll">
                             <ul class="swiper-wrapper flex">
                                 <li class="item">
                                     <div class="product-container">
@@ -675,13 +676,13 @@
                                         <p class="money">$559.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -694,13 +695,13 @@
                                         <p class="money">$459.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -713,13 +714,13 @@
                                         <p class="money">$559.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -732,13 +733,13 @@
                                         <p class="money">$559.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -751,13 +752,13 @@
                                         <p class="money">$559.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -770,13 +771,13 @@
                                         <p class="money">$559.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -789,13 +790,13 @@
                                         <p class="money">$259.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -808,13 +809,13 @@
                                         <p class="money">$259.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -827,13 +828,13 @@
                                         <p class="money">$299.00</p>
                                         <div class="imagetWrapper">
                                         <div class="product-btn">
-                                            <a href="">
+                                            <a class="link-product" href="">
                                                 <i class="fa-solid fa-link"></i>
                                             </a>
                                             <a href="">
                                                 <i class="fa-regular fa-heart"></i>
                                             </a>
-                                            <a href="">
+                                            <a class="search-product" href="#">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
                                         </div>
@@ -842,14 +843,300 @@
                             </ul>                            
                         </div>
                     </div>
+                    <div class="pagination-coll">
+                        <span><</span>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <span>></span>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            
+              
+        </div>
+        <!-- Begin: Product collection -->
+        <div class="product-colleciton">
+            <ul class="grid-product-collection">
+                <li class="grid-item-product item-product flex">
+                    <div class="close close-product">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <div class="sidebar-img">
+                        <img src="./assets/imgs/ck1.webp" alt="">
+                    
+                    </div>
+                    <div class="sidebar">
+                        <h4>Cheese Potato Pizza</h4>
+                        <div class="product-price">           
+                            <h6>Price: </h6>
+                            <span class="money">$599.00</span>
+                        </div>
+                        <div class="product-size">
+                            <h6 for="product-select-Size">Size:</h6>
+                            <select id="product-select-Size">
+                                <option selected="">
+                                    L
+                                </option>
+                                <option>
+                                    M
+                                </option>
+                                <option>
+                                    S
+                                </option>
+                                </select>
+                        </div>
+                        <div class="menu-sticky dish">
+                            <div class="sidebar-item">
+                                <h6>Dish: </h6>
+                                <span>
+                                    <input type="radio" name="dish-choice-proc" checked id="Non-Veg">
+                                    <label for="Non-Veg" style="margin-right: 8px;">Non-Veg</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="dish-choice-proc" id="Veg">
+                                    <label for="Veg">Veg</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product-quantity">
+                            <h6>Quantity:</h6>
+                            <input type="number" value="1" min="1" name="" id="" >
+                        </div>
+                        <div class="menu-sticky">
+                            <button>Add to Cart</button>
+                            <button>Buy it now</button>
+                        </div>
+                    </div>
+                </li>
+                <!-- More.... -->
+            </ul>
+        </div>
+        <!-- End: Product collection -->
+        <!-- END: Collection-->
+        <!-- BEGIN: Product-->
+        <div id="product-template" class="product-template shopify-desc">
+            <div class="header-content">
+                <h4>PRODUCT</h4>
+                <p>
+                    <a href="#">Home</a>
+                    <span>Product</span>
+                </p>
+            </div>
+            <div class="product-template-container">
+                <ul class="list-product">
+                    <li class="item-product flex">
+                        <div class="sidebar-img">
+                            <img src="./assets/imgs/ck1.webp" alt="">
+                        </div>
+                        <div class="sidebar">
+                            <h4>Cheese Potato Pizza</h4>
+                            <div class="product-price">           
+                                <h6>Price: </h6>
+                                <span class="money">$599.00</span>
+                            </div>
+                            <div class="product-size">
+                                <h6 for="product-select-Size">Size:</h6>
+                                <select id="product-select-Size">
+                                    <option selected="">
+                                        L
+                                    </option>
+                                    <option>
+                                        M
+                                    </option>
+                                    <option>
+                                        S
+                                    </option>
+                                    </select>
+                            </div>
+                            <div class="product-crust">
+                                <h6>Crust: </h6>
+                                <p>Hand Tossed</p>
+                            </div>
+                            <div class="menu-sticky dish">
+                                <div class="sidebar-item">
+                                    <h6>Dish: </h6>
+                                    <span>
+                                        <input type="radio" name="dish-choice" checked id="Non-Veg">
+                                        <label for="Non-Veg" style="margin-right: 8px;">Non-Veg</label>
+                                    </span>
+                                    <span>
+                                        <input type="radio" name="dish-choice" id="Veg">
+                                        <label for="Veg">Veg</label>
+                                    </span>
+                                </div>
+                            </div>
+        
+                            <div class="product-vendor">
+                                <h6 >Vendor:</h6>
+                                <a href="" title="Pizza">Pizza</a>
+                            </div>
+            
+                            <div class="product-type" >
+                                <h6 >Type:</h6>
+                                <span>Pizza House</span>
+                            </div>
+            
+                            <div class="product-avaibility" >
+                                <h6 >Avaibility:</h6>
+                                <span>In stock!</span>
+                            </div>
+            
+                            <div class="product-quantity">
+                                <h6>Quantity:</h6>
+                                <input type="number" value="1" min="1" name="" id="" >
+                            </div>
+                            <div class="menu-sticky">
+                                <button>Add to Cart</button>
+                                <button>Buy it now</button>
+                                <button>Add to WishList</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-tab">
+                <div class="tabs-container">
+                  <div class="dt-sc-tabs">       
+                    <button class="tablinks active" onclick="openTab(event, 'tab-description')">Product Description</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab-custom')">Additional information</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab-review')">Reviews</button>
+                  </div>
+                </div>
+                <div class="tabs-content-list">
+                    <div class="tabs-content" id="tab-description">
+                        <div class="desc-p">
+                            <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.Donec pretium egestas sapien et mollis.</p>
+                            <h4 class="desc">Lorem ipsum dolor sit amet</h4>
+                            <p>Sonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h4 class="desc">Busey ipsum dolor sit amet</h4>
+                            <p>Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci dapibus ultrices. Tortor condimentum lacinia quis vel eros donec ac odio. Velit euismod in pellentesque massa placerat duis ultricies lacus. Scelerisque purus semper eget duis at tellus at urna condimentum. Eu facilisis sed odio morbi quis commodo odio aenean urpis massa sed elemen.</p>
+                            <h4 class="desc">Vestibulum sit amet ipsum</h4>
+                            <p>Praesent vestibulum congue tellus at fringilla. Curabitur vitae semper sem, eu convallis est. Cras felis nunc commodo eu convallis vitae interdum non nisl. Maecenas ac est sit amet augue pharetra convallis nec danos dui. Cras suscipit quam et turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque. Sed vitae mi a mi pretium aliquet ac sed elit. Pellentesque nulla eros accumsan quis justo at tincidunt lobortis denimes loremous. Suspendisse vestibulum lectus in lectus volutpat, ut dapibus purus pulvinar. Vestibulum sit amet auctor ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="tabs-content" id="tab-custom">
+                        <div class="shipping-container">
+                            <div class="item">
+                                <h4>Returns policy</h4>
+                                <p>You may return most new, unopened items within 30 days of delivery for a full refund. We'll also pay the return shipping costs if the return is a result of our error (you received an incorrect or defective item, etc.).</p>
+                                <p>You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).</p>
+                                <p>If you need to return an item, simply login to your account, view the order using the 'Complete Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.</p>
+                            </div>
+                            <div class="item">
+                                <h4>Shipping details</h4>
+                                <p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.</p>
+                                <p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.</p>
+                                <p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-content" id="tab-review">
+                        <div class="desc-p">
+                            <div class="review-title">
+                                <h4>Customer Reviews</h4>
+                                <div class="rate-review flex">
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        Based on 1 review
+                                    </div>
+                                    <div class="mutiple-btns">
+                                        <button>Write a review</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="review-body">
+                                <div class="rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h4>American Brewhouse King</h4>
+                                <p><strong>keerthana on Jul 23, 2018</strong></p>
+                                <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.Donec pretium egestas sapien et mollis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recomended-products">
+                <div class="recomended-header">
+                    <h4>Recommended products</h4>
+                </div>
+                <div class="tabs-content-coll">
+                    <ul class="swiper-wrapper flex">
+                        <li class="item">
+                            <div class="product-container">
+                                <a href=""><img src="./assets/imgs/mu3.webp" alt=""></a>
+                                <p>Soya Cheese Masala</p>
+                                <p class="money">$559.00</p>
+                                <div class="imagetWrapper">
+                                <div class="product-btn">
+                                    <a class="link-product" href="">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                    <a class="search-product" href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                            </div>                                    
+                        </li>
+                        <li class="item">
+                            <div class="product-container">
+                                <a href=""><img src="./assets/imgs/ba1.webp" alt=""></a>
+                                <p>Veggie Feast Pizza</p>
+                                <p class="money">$259.00</p>
+                                <div class="imagetWrapper">
+                                <div class="product-btn">
+                                    <a class="link-product" href="">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                    <a class="search-product" href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                            </div>                                    
+                        </li>
+                        <li class="item">
+                            <div class="product-container">
+                                <a href=""><img src="./assets/imgs/ba2.webp" alt=""></a>
+                                <p>Spicy Cheese Chicken</p>
+                                <p class="money">$259.00</p>
+                                <div class="imagetWrapper">
+                                <div class="product-btn">
+                                    <a class="link-product" href="">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                    <a class="search-product" href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                            </div>                                    
+                        </li>
+                    </ul>                            
                 </div>
             </div>
         </div>
-        <!-- END: Collection-->
-        <!-- BEGIN: Product-->
-        <div id="product-template" class="product-template">
-            
-        </div>
+ 
         <!-- END: Product-->
 
         <!-- ========= MAIN ===================================================================================================================================================================== -->
@@ -1011,7 +1298,7 @@
                             <p>Our chefs are working 24/7 and are ready to accept visitors and at any time of the day and night</p>
                             <a href="#">
                                 <div class="mutiple-btns">
-                                    <button>View all collection</button>
+                                    <button onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');">View all collection</button>
                                 </div>
                             </a>
                         </div>
@@ -1027,10 +1314,10 @@
                     <div class="img-bar__section-inner">
                         <ul class="img-bar__list flex">
                             <li class="img-bar__item">
-                                <a href=""><img src="./assets/imgs/img3_970x.jpg" alt=""></a>
+                                <a href="#collection-template" onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');"><img src="./assets/imgs/img3_970x.jpg" alt=""></a>
                             </li>
                             <li class="img-bar__item">
-                                <a href=""><img src="./assets/imgs/img4_970x.jpg" alt=""></a>
+                                <a href="#collection-template" onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');"><img src="./assets/imgs/img4_970x.jpg" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -1047,16 +1334,17 @@
                 <div class="group-content">
                     <div class="tabs-wrapper">
                         <div class="tabs flex">
-                            <p class="tablinks" onclick="showFormFlex('chicken', 'swiper-wrapper');">Chicken</p>
-                            <p class="tablinks" onclick="showFormFlex('mushrooms', 'swiper-wrapper');">Mushrooms</p>
-                            <p class="tablinks" onclick="showFormFlex('bacon', 'swiper-wrapper');">Bacon</p>
+                            <p class="tablinks active" onclick="openTab(event, 'chicken');">Chicken</p>
+                            <p class="tablinks" onclick="openTab(event, 'mushrooms');">Mushrooms</p>
+                            <p class="tablinks" onclick="openTab(event, 'bacon');">Bacon</p>
+                            <!-- onclick="showFormFlex('bacon', 'swiper-wrapper');" -->
                         </div>
                         <!--  -->
                         <!--  -->
                         <div class="tabs-container">
-                            <div class="taps-content">
+                            <div class="">
                                 <!-- Chicken -->
-                                <ul id="chicken" class="swiper-wrapper flex">
+                                <ul id="chicken" class="swiper-wrapper tabs-content flex">
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/ck1.webp" alt=""></a>
@@ -1064,7 +1352,7 @@
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1083,7 +1371,7 @@
                                             <p class="money">$459.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1102,7 +1390,7 @@
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1117,7 +1405,7 @@
                                 </ul>
                                 
                                 <!-- Mushrooms -->
-                                <ul id="mushrooms" class="swiper-wrapper flex">
+                                <ul id="mushrooms" class="swiper-wrapper tabs-content flex">
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/mu1.webp" alt=""></a>
@@ -1125,7 +1413,7 @@
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1144,7 +1432,7 @@
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1163,7 +1451,7 @@
                                             <p class="money">$559.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1178,7 +1466,7 @@
                                 </ul>
                                 
                                 <!-- Bacon -->
-                                <ul  id="bacon"  class="swiper-wrapper flex">
+                                <ul  id="bacon"  class="swiper-wrapper tabs-content flex">
                                     <li class="item">
                                         <div class="product-container">
                                             <a href=""><img src="./assets/imgs/ba1.webp" alt=""></a>
@@ -1186,7 +1474,7 @@
                                             <p class="money">$259.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1205,7 +1493,7 @@
                                             <p class="money">$259.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1224,7 +1512,7 @@
                                             <p class="money">$299.00</p>
                                             <div class="imagetWrapper">
                                             <div class="product-btn">
-                                                <a href="">
+                                                <a class="link-product" href="">
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
                                                 <a href="">
@@ -1259,7 +1547,7 @@
                         Estimated delivery: April 14-24
                     </p>
     
-                    <a href="">
+                    <a href="#collection-template" onclick="javascript:closeFormClass('shopify-section'); showForm('collection-template', 'shopify-desc');">
                         <div class="mutiple-btns">
                             <button>View more</button>
                         </div>

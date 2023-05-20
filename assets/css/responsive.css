@@ -180,4 +180,11 @@
         padding: 12px;
         width: 100%;
     }
+    /* product  */
+    .product-template-container .sidebar{
+        width: 100%;
+    }
+    .product-template-container .sidebar-img{
+        width: 100%;
+    }
 }

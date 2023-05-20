@@ -95,19 +95,6 @@ function validateEmail(email) {
     return true;
 }
 
-// function validateEmail1() {
-//     const val = emailInput.value.trim();
-//     if (val === "") {
-//         emailInput.setCustomValidity("Email is required");
-//         return false;
-//     }
-//     if (!isValidEmail(val)) {
-//         emailInput.setCustomValidity("Invalid email address");
-//         return false;
-//     }
-//     emailInput.setCustomValidity("");
-//     return true;
-// }
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -130,7 +117,6 @@ function showHide(id){
         ctr.style.display = 'none';
 }
 function ShowItem(id){
-    alert("Show item");
     var ctr = document.getElementById(id);
     ctr.style.display = 'block';
 }
@@ -168,37 +154,6 @@ function closeForm(id, cl){
     var formToShow = document.getElementById(id);
     formToShow.style.display = "none";
 }
-function setBackgroundOnClick(cl, clor) {
-    var elemments = document.getElementsByClassName(cl);
-    var prevElement = null;
-    
-    for(var i = 0; i<elemments.length; i++){
-        elemments[i].onclick = function(){
-            if(prevElement != null)
-                prevElement.style.background = '';
-            this.style.background = clor;
-            prevElement = this;
-        }
-    }
-}
-
-// setBackgroundOnClick('tablinks', '#fec524');
-
-// 
-// var acc = document.getElementsByClassName("faq-tit");
-
-// for (var i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
-
 
 function DongMo(cl, clActive){
     var acc = document.getElementsByClassName(cl);
@@ -216,3 +171,48 @@ function DongMo(cl, clActive){
 }
 DongMo("sidebar-heading", "coll-active");
 DongMo("faq-tit", "active");
+
+
+
+const sItems = document.querySelectorAll('.search-product')
+const modal = document.querySelector('.product-colleciton')
+const modalContainer = document.querySelector('.grid-item-product')
+const modalClose = document.querySelector('.close-product')
+// ham hien thi modal mua ve (them class open vao modal)
+function showProduct() {
+    modal.classList.add('open')
+}
+//lap qua tung the button va nghe hanh vi click
+for (const sItem of sItems){
+    sItem.addEventListener('click',showProduct )
+}
+
+// Ham an modal mua ve (go class open cua modal)
+function hideProduct(){
+    modal.classList.remove('open')
+}
+//nghe hanh vi click vao nut button close
+modalClose.addEventListener('click', hideProduct)
+
+modal.addEventListener('click', hideProduct)
+
+modalContainer.addEventListener('click',function (event) {
+    event.stopPropagation()
+})
+
+// 
+function openTab(evt, TabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabs-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(TabName).style.display = "flex";
+    evt.currentTarget.className += " active";
+  }
+  $( ".tablinks" ).first().addClass( "active" );
+  $( ".tabs-content" ).first().css( "display", "block" );
