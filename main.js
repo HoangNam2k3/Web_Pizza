@@ -109,13 +109,13 @@ function isValidPassword(passw){
 
 // ===============================================================================================
 // Show Hide
-function showHide(id){
-    var ctr = document.getElementById(id);
-    if(ctr.style.display == 'none')
-        ctr.style.display = 'block';
-    else
-        ctr.style.display = 'none';
-}
+// function showHide(id){
+//     var ctr = document.getElementById(id);
+//     if(ctr.style.display == 'none')
+//         ctr.style.display = 'block';
+//     else
+//         ctr.style.display = 'none';
+// }
 function ShowItem(id){
     var ctr = document.getElementById(id);
     ctr.style.display = 'block';
@@ -178,16 +178,16 @@ const sItems = document.querySelectorAll('.search-product')
 const modal = document.querySelector('.product-colleciton')
 const modalContainer = document.querySelector('.grid-item-product')
 const modalClose = document.querySelector('.close-product')
-// ham hien thi modal mua ve (them class open vao modal)
+// ham hien thi modal product (them class open vao modal)
 function showProduct() {
     modal.classList.add('open')
 }
-//lap qua tung the button va nghe hanh vi click
+//lap qua tung the sItems va nghe hanh vi click
 for (const sItem of sItems){
     sItem.addEventListener('click',showProduct )
 }
 
-// Ham an modal mua ve (go class open cua modal)
+// Ham an modal product (go class open cua modal)
 function hideProduct(){
     modal.classList.remove('open')
 }
@@ -214,5 +214,5 @@ function openTab(evt, TabName) {
     document.getElementById(TabName).style.display = "flex";
     evt.currentTarget.className += " active";
   }
-  $( ".tablinks" ).first().addClass( "active" );
-  $( ".tabs-content" ).first().css( "display", "block" );
+//   $( ".tablinks" ).first().addClass( "active" );
+//   $( ".tabs-content" ).first().css( "display", "block" );
